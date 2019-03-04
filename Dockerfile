@@ -84,9 +84,9 @@ RUN apk upgrade --update && \
 	  tar -xzvf /tmp/docker.tgz -C /tmp && \
 	  cp /tmp/docker/docker /usr/local/bin/ && \
     # Install MEGAtools
-    curl -fSL "https://megatools.megous.com/builds/megatools-1.9.98.tar.gz" -o /tmp/megatools.tgz && \
+    curl -fSL "https://megatools.megous.com/builds/megatools-1.10.2.tar.gz" -o /tmp/megatools.tgz && \
     tar -xzvf /tmp/megatools.tgz -C /tmp && \
-    cd /tmp/megatools-1.9.98 && \
+    cd /tmp/megatools-1.10.2 && \
     ./configure && \
     make && \
     make install && \
